@@ -4,7 +4,7 @@ with open('README.txt') as readme:
     long_description = readme.read()
 
 setup(name="PyContractor",
-    version="0.1.0",
+    version="0.1.1",
     description="Design By Contract library",
     long_description=long_description,
     author="Ernesto Bossi",
