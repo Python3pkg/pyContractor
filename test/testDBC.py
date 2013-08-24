@@ -7,19 +7,19 @@ class TesterClass(object):
         dbc.PyContractor.require(b != 0, "Divisor must be non-zero")
 
     def stackNotEmpty(self):
-        stack=[22]
+        stack = [22]
         stack.pop()
-        dbc.PyContractor.ensure(stack,'Stack must not be left empty')
+        dbc.PyContractor.ensure(stack, 'Stack must not be left empty')
 
-    def assertStatement(self,n):
-        dbc.PyContractor.assertExpression(n == 1,'Assertion failed')
+    def assertStatement(self, n):
+        dbc.PyContractor.assertExpression(n == 1, 'Assertion failed')
 
-    def assertInvariant(self,n):
-            dbc.PyContractor.invariant(n == 1,'Assertion failed')
+    def assertInvariant(self, n):
+            dbc.PyContractor.invariant(n == 1, 'Assertion failed')
 
-    def evaluateString(self,string1,string2):
+    def evaluateString(self, string1, string2):
         st = string1 + string2
-        dbc.PyContractor.require_not_blank(st,'String concatenation is blank')
+        dbc.PyContractor.require_not_blank(st, 'String concatenation is blank')
 
 class testBaseDBC(TestCase):
 
