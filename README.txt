@@ -21,7 +21,7 @@ separate function.
 
 For ex.
 
-.. code:: python
+.. code:: 
 
         from PyContractor import PyContractor
 
