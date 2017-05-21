@@ -89,6 +89,6 @@ PRECONDITIONALS = [PyContractor.require, PyContractor.require_not_blank]
 POSTCONDITIONALS = [PyContractor.ensure]
 CONDITIONALS = [PyContractor.assertExpression]
 
-isPreConditional = lambda (method): method in PRECONDITIONALS
-isPostConditional = lambda (method): method in POSTCONDITIONALS
-isConditional = lambda (method): method in PRECONDITIONALS+POSTCONDITIONALS+CONDITIONALS
+isPreConditional = lambda method: method in PRECONDITIONALS
+isPostConditional = lambda method: method in POSTCONDITIONALS
+isConditional = lambda method: method in PRECONDITIONALS+POSTCONDITIONALS+CONDITIONALS
